@@ -1,1 +1,1 @@
-# ChatGPT-TaslManagementSystem
+# ChatGPT-TaskManagementSystem
