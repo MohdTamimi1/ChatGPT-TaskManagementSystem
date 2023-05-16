@@ -12,3 +12,8 @@ app.use(cors());
 app.get("/.well-known/ai-plugin.json", (req, res) => {
   res.sendFile(path.join(__dirname, "..", ".well-known", "ai-plugin.json"));
 });
+
+// Serve the OpenAPI specification
+app.get("/openapi.yaml", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "..", "openapi.yaml"));
+});
