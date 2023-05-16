@@ -19,3 +19,21 @@ paths:
               properties:
                 task:
                   type: string
+      responses:
+        "200":
+          description: OK
+    get:
+      operationId: getTasks
+      summary: Get the list of tasks
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tasks:
+                    type: array
+                    items:
+                      type: string
