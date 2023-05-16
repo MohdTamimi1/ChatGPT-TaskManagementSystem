@@ -5,3 +5,8 @@
 - Installing the required packages for Node.Js
 - Started Establishing the project structure with basic functionality to validate the successful integration of the plugin with ChatGPT.
 - Started Studying the Basics of Express.Js
+
+## Week 2 (May/15 - May/19)
+
+- Studying the basics of Express.Js and how to use it with Node.Js
+- Studying Node.Js basics callbacks, promises, and async/await
