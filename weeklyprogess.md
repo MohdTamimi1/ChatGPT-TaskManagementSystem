@@ -11,3 +11,4 @@
 - Studying the basics of Express.Js and how to use it with Node.Js
 - Studying Node.Js basics callbacks, promises, and async/await
 - Working on openapi.yaml file to define the API endpoints (done for the basic functionality)
+- Working on index.js
