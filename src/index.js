@@ -17,3 +17,8 @@ app.get("/.well-known/ai-plugin.json", (req, res) => {
 app.get("/openapi.yaml", (req, res) => {
   res.sendFile(path.resolve(__dirname, "..", "openapi.yaml"));
 });
+
+// Serve the plugin logo
+app.get("/logo.png", (req, res) => {
+  res.sendFile(path.join(__dirname, "..", "logo.png"));
+});
