@@ -11,3 +11,6 @@ const addTask = (req, res) => {
 const getTasks = (req, res) => {
   res.status(200).json({ tasks });
 };
+
+// Export functions
+module.exports = { addTask, getTasks };
