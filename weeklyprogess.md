@@ -12,4 +12,4 @@
 - Studying Node.Js basics callbacks, promises, and async/await
 - Working on openapi.yaml file to define the API endpoints (done for the basic functionality)
 - Working on index.js (Done for the basic functionality)
-- Working on controllers.js
+- Working on controllers.js (Done for the basic functionality)
