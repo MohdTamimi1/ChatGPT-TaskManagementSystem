@@ -6,3 +6,8 @@ const addTask = (req, res) => {
   tasks.push(task);
   res.status(200).json({ message: "Task added successfully." });
 };
+
+// Get tasks
+const getTasks = (req, res) => {
+  res.status(200).json({ tasks });
+};
