@@ -7,3 +7,5 @@ router.post("/tasks", addTask);
 
 // Get the list of tasks
 router.get("/tasks", getTasks);
+
+module.exports = router;
