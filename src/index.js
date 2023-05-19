@@ -12,6 +12,9 @@ app.use(cors());
 // Enable JSON body parsing for POST requests
 app.use(express.json());
 
+// Use the routes in your application
+app.use(taskRoutes);
+
 // Serve the plugin manifest
 app.get("/.well-known/ai-plugin.json", (req, res) => {
   res.sendFile(path.join(__dirname, "..", ".well-known", "ai-plugin.json"));
