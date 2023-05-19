@@ -5,18 +5,8 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-// Enable CORS and allow ChatGPT domain
-app.use(
-  cors({
-    origin: ["http://localhost:3000", "https://chat.openai.com"],
-    credentials: true,
-  })
-);
-
-app.use(express.json());
-
-// In-memory storage for tasks
-const tasks = [];
+// Enable CORS for all routes
+app.use(cors());
 
 // Serve the plugin manifest
 app.get("/.well-known/ai-plugin.json", (req, res) => {
