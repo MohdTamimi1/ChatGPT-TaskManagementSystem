@@ -15,4 +15,5 @@
 - Working on controllers.js (Done for the basic functionality)
 - Working on routes.js (Done for the basic functionality)
 - Installing Cors package to allow Cross-Origin Resource Sharing (Done for the basic functionality)
-- fixing basic functionality bugs
+- Fixing basic functionality bugs
+- Bugs functionality fixed successfully and the basic functionality is working as expected to add and view tasks in chatGPT
