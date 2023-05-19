@@ -13,10 +13,10 @@ app.use(
   })
 );
 
+app.use(express.json());
+
 // In-memory storage for tasks
 const tasks = [];
-
-app.use(express.json());
 
 // Serve the plugin manifest
 app.get("/.well-known/ai-plugin.json", (req, res) => {
