@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
+const taskRoutes = require("./api/routes"); // Import the routes from the api/routes.js file
 
 const app = express();
 const PORT = 3000;
