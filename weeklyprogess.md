@@ -15,3 +15,4 @@
 - Working on controllers.js (Done for the basic functionality)
 - Working on routes.js (Done for the basic functionality)
 - Installing Cors package to allow Cross-Origin Resource Sharing (Done for the basic functionality)
+- fixing basic functionality bugs
