@@ -17,3 +17,4 @@
 - Installing Cors package to allow Cross-Origin Resource Sharing (Done for the basic functionality)
 - Fixing basic functionality bugs
 - Bugs functionality fixed successfully and the basic functionality is working as expected to add and view tasks in chatGPT
+- The state of the plugin, Connected successfully with ChatGPT and the basic functionality is working as expected to add and view tasks in chatGPT
