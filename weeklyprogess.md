@@ -20,3 +20,5 @@
 - The state of the plugin, Connected successfully with ChatGPT and the basic functionality is working as expected to add and view tasks in chatGPT
 
 ## Week 2 (May/22 - May/26)
+
+- Continuing Studying the basics of Express.Js and how to use it with Node.Js
