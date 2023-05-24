@@ -22,4 +22,4 @@
 ## Week 3 (May/22 - May/26)
 
 - Continuing Studying the basics of Express.Js and how to use it with Node.Js
-- Working on a timer for the tasks
+- Working on edit tasks
