@@ -14,7 +14,7 @@ const getTasks = (req, res) => {
 
 // Edit task
 const editTask = (req, res) => {
-  const taskIndex = req.params.taskIndex;
+  const taskIndex = Number(req.params.taskIndex); // Convert taskIndex to a number
   const newTask = req.body.newTask;
 
   if (taskIndex >= 0 && taskIndex < tasks.length) {
