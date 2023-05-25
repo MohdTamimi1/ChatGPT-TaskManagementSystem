@@ -37,6 +37,7 @@ paths:
                     type: array
                     items:
                       type: string
+  /tasks/{taskIndex}:
     put:
       operationId: editTask
       summary: Edit a task
