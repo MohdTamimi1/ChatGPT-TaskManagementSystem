@@ -22,3 +22,6 @@ const editTask = (req, res) => {
     res.status(400).json({ message: "Invalid task index." });
   }
 };
+
+// Export functions
+module.exports = { addTask, getTasks, editTask };
