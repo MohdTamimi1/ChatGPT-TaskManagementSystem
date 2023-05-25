@@ -9,6 +9,6 @@ router.post("/tasks", addTask);
 router.get("/tasks", getTasks);
 
 // Edit a task
-router.put("/tasks", editTask);
+router.put("/tasks/:taskIndex", editTask);
 
 module.exports = router;
