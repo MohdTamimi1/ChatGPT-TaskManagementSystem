@@ -14,10 +14,12 @@ const getTasks = (req, res) => {
 
 // Edit task
 const editTask = (req, res) => {
-  const { taskIndex, newTask } = req.body;
+  const taskIndex = req.params.taskIndex;
+  const newTask = req.body.newTask;
+
   if (taskIndex >= 0 && taskIndex < tasks.length) {
     tasks[taskIndex] = newTask;
-    res.status(200).json({ message: "Task updated successfully." });
+    res.status(200).json({ message: "Task edited successfully." });
   } else {
     res.status(400).json({ message: "Invalid task index." });
   }
