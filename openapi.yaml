@@ -37,3 +37,20 @@ paths:
                     type: array
                     items:
                       type: string
+    put:
+      operationId: editTask
+      summary: Edit a task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                taskIndex:
+                  type: integer
+                newTask:
+                  type: string
+      responses:
+        "200":
+          description: OK
