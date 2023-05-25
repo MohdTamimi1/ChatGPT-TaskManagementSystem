@@ -12,5 +12,13 @@ const getTasks = (req, res) => {
   res.status(200).json({ tasks });
 };
 
-// Export functions
-module.exports = { addTask, getTasks };
+// Edit task
+const editTask = (req, res) => {
+  const { taskIndex, newTask } = req.body;
+  if (taskIndex >= 0 && taskIndex < tasks.length) {
+    tasks[taskIndex] = newTask;
+    res.status(200).json({ message: "Task updated successfully." });
+  } else {
+    res.status(400).json({ message: "Invalid task index." });
+  }
+};
