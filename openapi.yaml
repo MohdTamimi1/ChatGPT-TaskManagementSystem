@@ -37,3 +37,17 @@ paths:
                     type: array
                     items:
                       type: string
+    /tasks/{taskIndex}:
+    delete:
+      operationId: deleteTask
+      summary: Delete a task
+      parameters:
+        - in: path
+          name: taskIndex
+          schema:
+            type: integer
+          required: true
+          description: The index of the task to delete.
+      responses:
+        "200":
+          description: OK
