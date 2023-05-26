@@ -37,7 +37,7 @@ paths:
                     type: array
                     items:
                       type: string
-    /tasks/{taskIndex}:
+    /tasks:
     delete:
       operationId: deleteTask
       summary: Delete a task
