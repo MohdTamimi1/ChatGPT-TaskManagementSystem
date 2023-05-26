@@ -13,4 +13,4 @@ const getTasks = (req, res) => {
 };
 
 // Export functions
-module.exports = { addTask, getTasks, editTask };
+module.exports = { addTask, getTasks };
