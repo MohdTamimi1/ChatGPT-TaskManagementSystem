@@ -9,6 +9,6 @@ router.post("/tasks", addTask);
 router.get("/tasks", getTasks);
 
 // Delete a task
-router.delete("/tasks/:taskIndex", deleteTask);
+router.delete("/tasks", deleteTask);
 
 module.exports = router;
