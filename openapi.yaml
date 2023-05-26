@@ -37,26 +37,3 @@ paths:
                     type: array
                     items:
                       type: string
-  /tasks/{taskIndex}:
-    put:
-      operationId: editTask
-      summary: Edit a task
-      parameters:
-        - in: path
-          name: taskIndex
-          schema:
-            type: integer
-          required: true
-          description: The index of the task to edit.
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                newTask:
-                  type: string
-      responses:
-        "200":
-          description: OK
