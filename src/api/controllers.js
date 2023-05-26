@@ -25,4 +25,4 @@ const deleteTask = (req, res) => {
 };
 
 // Export functions
-module.exports = { addTask, getTasks };
+module.exports = { addTask, getTasks, deleteTask };
