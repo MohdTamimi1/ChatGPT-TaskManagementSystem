@@ -28,3 +28,4 @@
 ## Week 4 (May/29 - June/2)
 
 - Studying Python basics
+- Convert the project from Node.Js to Python
