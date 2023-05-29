@@ -30,3 +30,4 @@
 - Studying Python basics
 - Convert the project from Node.Js to Python
 - Working on each file in the project to convert it from Node.Js to Python
+- First step is to convert make sure that the basic functionality is working as expected in Python
