@@ -26,3 +26,5 @@
 - The whole project will be changed into python instead of Node.Js since the ChatGPT is written in python and it will be easier to integrate the plugin with ChatGPT and I am having a lot of problems with Node.Js.
 
 ## Week 4 (May/29 - June/2)
+
+- Studying Python basics
