@@ -29,3 +29,4 @@
 
 - Studying Python basics
 - Convert the project from Node.Js to Python
+- Working on each file in the project to convert it from Node.Js to Python
