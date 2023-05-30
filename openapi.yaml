@@ -6,48 +6,59 @@ info:
 servers:
   - url: http://localhost:3000
 paths:
-  /tasks:
-    post:
-      operationId: addTask
-      summary: Add a new task
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                task:
-                  type: string
-      responses:
-        "200":
-          description: OK
+  /todos/{username}:
     get:
-      operationId: getTasks
-      summary: Get the list of tasks
+      operationId: getTodos
+      summary: Get the list of todos
+      parameters:
+        - in: path
+          name: username
+          schema:
+            type: string
+          required: true
+          description: The name of the user.
       responses:
         "200":
           description: OK
           content:
             application/json:
               schema:
-                type: object
-                properties:
-                  tasks:
-                    type: array
-                    items:
-                      type: string
-    /tasks:
-    delete:
-      operationId: deleteTask
-      summary: Delete a task
+                $ref: "#/components/schemas/getTodosResponse"
+    post:
+      operationId: addTodo
+      summary: Add a todo to the list
       parameters:
         - in: path
-          name: taskIndex
+          name: username
           schema:
-            type: integer
+            type: string
           required: true
-          description: The index of the task to delete.
+          description: The name of the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/addTodoRequest"
+      responses:
+        "200":
+          description: OK
+    delete:
+      operationId: deleteTodo
+      summary: Delete a todo from the list
+      parameters:
+        - in: path
+          name: username
+          schema:
+            type: string
+          required: true
+          description: The name of the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/deleteTodoRequest"
       responses:
         "200":
           description: OK
