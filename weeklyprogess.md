@@ -22,7 +22,7 @@
 ## Week 3 (May/22 - May/26)
 
 - Continuing Studying the basics of Express.Js and how to use it with Node.Js
-- Working on delete tasks (Still in progress)
+- Working on delete tasks (Cancelled)
 - The whole project will be changed into python instead of Node.Js since it will be easier for me to integrate the plugin with ChatGPT and because I am having a lot of problems with Node.Js.
 
 ## Week 4 (May/29 - June/2)
