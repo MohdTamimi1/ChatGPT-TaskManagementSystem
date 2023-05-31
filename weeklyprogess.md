@@ -34,3 +34,4 @@
 - openapi.yaml file converted from Node.Js to Python
 - deleted json files since they are not needed anymore
 - ai-plugin.json file updated to match the new changes
+- update to localhost url
