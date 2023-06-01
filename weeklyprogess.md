@@ -35,4 +35,4 @@
 - deleted json files since they are not needed anymore
 - ai-plugin.json file updated to match the new changes
 - update to localhost url
-- changing index.js to main.py
+- changed index.js to main.py
