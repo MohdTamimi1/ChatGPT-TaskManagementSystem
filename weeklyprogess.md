@@ -38,3 +38,6 @@
 - changed index.js to main.py
 - will add the ability to add username to have separate tasks for each user (Still in progress)
 - add tasks (Still in progress)
+- view tasks (Still in progress)
+- delete tasks (Still in progress)
+- update tasks (Still in progress)
