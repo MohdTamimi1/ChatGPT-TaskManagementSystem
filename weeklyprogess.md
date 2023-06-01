@@ -36,3 +36,4 @@
 - ai-plugin.json file updated to match the new changes
 - update to localhost url
 - changed index.js to main.py
+- will add the ability to add username to have separate tasks for each user (Still in progress)
