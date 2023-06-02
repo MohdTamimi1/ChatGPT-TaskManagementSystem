@@ -39,5 +39,5 @@
 - will add the ability to add username to have separate tasks for each user (Done)
 - add tasks (Done)
 - view tasks (Done)
-- delete tasks (Still in progress)
+- delete tasks (Done)
 - update tasks (Still in progress)
