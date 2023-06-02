@@ -40,4 +40,4 @@
 - add tasks (Done)
 - view tasks (Done)
 - delete tasks (Done)
-- update tasks (Still in progress)
+- update tasks (Done)
