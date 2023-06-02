@@ -29,7 +29,7 @@
 
 - Studying Python basics
 - Convert the project from Node.Js to Python
-- Working on each file in the project to convert it from Node.Js to Python (Still in progress)
+- Working on each file in the project to convert it from Node.Js to Python (Done for the basic functionality)
 - First step is to convert make sure that the basic functionality is working as expected in Python
 - openapi.yaml file converted from Node.Js to Python
 - deleted json files since they are not needed anymore
