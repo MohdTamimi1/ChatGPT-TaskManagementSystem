@@ -43,3 +43,5 @@
 - update tasks (Done)
 
 ## Week 5 (June/5 - June/9)
+
+- Testing the successful conversion of the project from Node.Js to Python
