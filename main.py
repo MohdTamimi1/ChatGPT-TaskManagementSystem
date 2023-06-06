@@ -1,4 +1,5 @@
 import json
+import time
 
 import quart
 import quart_cors
@@ -15,7 +16,13 @@ async def add_todo(username):
     request = await quart.request.get_json(force=True)
     if username not in _TODOS:
         _TODOS[username] = []
-    _TODOS[username].append(request["todo"])
+    todo_item = {
+        "task": request["todo"],
+        "start_time": None,
+        "end_time": None,
+        "time_spent": None
+    }
+    _TODOS[username].append(todo_item)
     return quart.Response(response='OK', status=200)
 
 
