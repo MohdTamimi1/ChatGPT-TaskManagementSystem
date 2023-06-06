@@ -26,6 +26,13 @@ async def add_todo(username):
     return quart.Response(response='OK', status=200)
 
 
+@app.post("/todos/start_timer/<string:username>/<int:todo_idx>")
+async def start_timer(username, todo_idx):
+    if 0 <= todo_idx < len(_TODOS[username]):
+        _TODOS[username][todo_idx]["start_time"] = time.time()
+    return quart.Response(response='OK', status=200)
+
+
 @app.get("/todos/<string:username>")
 async def get_todos(username):
     return quart.Response(response=json.dumps(_TODOS.get(username, [])), status=200)
