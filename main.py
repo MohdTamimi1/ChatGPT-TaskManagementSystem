@@ -54,7 +54,6 @@ async def get_todos(username):
 async def delete_todo(username):
     request = await quart.request.get_json(force=True)
     todo_idx = request["todo_idx"]
-    # fail silently, it's a simple plugin
     if 0 <= todo_idx < len(_TODOS[username]):
         _TODOS[username].pop(todo_idx)
     return quart.Response(response='OK', status=200)
