@@ -11,35 +11,35 @@ paths:
       operationId: getTodos
       summary: Get the list of todos
       parameters:
-        - in: path
-          name: username
-          schema:
+      - in: path
+        name: username
+        schema:
             type: string
-          required: true
-          description: The name of the user.
+        required: true
+        description: The name of the user.
       responses:
         "200":
           description: OK
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/getTodosResponse"
+                $ref: '#/components/schemas/getTodosResponse'
     post:
       operationId: addTodo
       summary: Add a todo to the list
       parameters:
-        - in: path
-          name: username
-          schema:
+      - in: path
+        name: username
+        schema:
             type: string
-          required: true
-          description: The name of the user.
+        required: true
+        description: The name of the user.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/addTodoRequest"
+              $ref: '#/components/schemas/addTodoRequest'
       responses:
         "200":
           description: OK
@@ -47,18 +47,58 @@ paths:
       operationId: deleteTodo
       summary: Delete a todo from the list
       parameters:
-        - in: path
-          name: username
-          schema:
+      - in: path
+        name: username
+        schema:
             type: string
-          required: true
-          description: The name of the user.
+        required: true
+        description: The name of the user.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/deleteTodoRequest"
+              $ref: '#/components/schemas/deleteTodoRequest'
+      responses:
+        "200":
+          description: OK
+  /todos/start_timer/{username}/{todo_idx}:
+    post:
+      operationId: startTimer
+      summary: Start the timer for a specific task
+      parameters:
+      - in: path
+        name: username
+        schema:
+            type: string
+        required: true
+        description: The name of the user.
+      - in: path
+        name: todo_idx
+        schema:
+            type: integer
+        required: true
+        description: The index of the todo for which to start the timer.
+      responses:
+        "200":
+          description: OK
+  /todos/stop_timer/{username}/{todo_idx}:
+    post:
+      operationId: stopTimer
+      summary: Stop the timer for a specific task
+      parameters:
+      - in: path
+        name: username
+        schema:
+            type: string
+        required: true
+        description: The name of the user.
+      - in: path
+        name: todo_idx
+        schema:
+            type: integer
+        required: true
+        description: The index of the todo for which to stop the timer.
       responses:
         "200":
           description: OK
@@ -71,12 +111,28 @@ components:
         todos:
           type: array
           items:
-            type: string
+            type: object
+            properties:
+              task:
+                type: string
+                description: The task description.
+              start_time:
+                type: number
+                format: double
+                description: The start time of the timer (Unix timestamp).
+              end_time:
+                type: number
+                format: double
+                description: The end time of the timer (Unix timestamp).
+              time_spent:
+                type: number
+                format: double
+                                description: The time spent on the task (in seconds).
           description: The list of todos.
     addTodoRequest:
       type: object
       required:
-        - todo
+      - todo
       properties:
         todo:
           type: string
@@ -85,7 +141,7 @@ components:
     deleteTodoRequest:
       type: object
       required:
-        - todo_idx
+      - todo_idx
       properties:
         todo_idx:
           type: integer
