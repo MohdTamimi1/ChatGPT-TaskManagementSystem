@@ -1,6 +1,6 @@
 openapi: 3.0.1
 info:
-    title: AIchiever Plugin
+    title: TODO Plugin
     description: A plugin that allows the user to manage tasks using ChatGPT.
     version: "v1"
 servers:
