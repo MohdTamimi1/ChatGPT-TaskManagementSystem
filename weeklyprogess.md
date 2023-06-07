@@ -44,6 +44,6 @@
 
 ## Week 5 (June/5 - June/9)
 
--   Testing the successful conversion of the project from Node.Js to Python
+-   Testing the successful conversion of the project from Node.Js to Python (Done)
 -   Working on Timer to start or end for each task (Finalized) and tested successfully
 -   Studying python libraries and how to use them
