@@ -47,3 +47,4 @@
 -   Testing the successful conversion of the project from Node.Js to Python (Done)
 -   Working on Timer to start or end for each task (Finalized) and tested successfully
 -   Studying python libraries and how to use them
+-   Housekeeping and refactoring the code (in progress)
