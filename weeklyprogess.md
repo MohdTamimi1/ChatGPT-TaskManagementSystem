@@ -47,5 +47,5 @@
 -   Testing the successful conversion of the project from Node.Js to Python (Done)
 -   Working on Timer to start or end for each task (Finalized) and tested successfully
 -   Studying python libraries and how to use them
--   Housekeeping and refactoring the code (in progress and will be finalized by the end of the week)
+-   Housekeeping and refactoring the code (Done)
 -   Testing the plugin with ChatGPT and Fully functional with added features so far (Done)
