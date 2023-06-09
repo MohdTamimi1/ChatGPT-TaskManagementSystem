@@ -45,7 +45,7 @@
 ## Week 5 (June/5 - June/9)
 
 -   Testing the successful conversion of the project from Node.Js to Python (Done)
--   Working on Timer to start or end for each task (Finalized) and tested successfully
+-   Timer Feature (Start Timer, End Timer and check time elapsed) (Done) finalized and tested
 -   Studying python libraries and how to use them
 -   Housekeeping and refactoring the code (Done)
 -   Testing the plugin with ChatGPT and Fully functional with added features so far (Done)
