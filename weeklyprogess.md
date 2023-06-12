@@ -52,4 +52,5 @@
 
 ## Week 6 (June/12 - June/16)
 
-- studying python Complex data structures: List, Set, Dictionary, Tuple
+- studying python Complex data structures: List, Set, Dictionary, Tuple\
+- workspace folder changed to venv to match the python virtual environment
