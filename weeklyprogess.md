@@ -50,6 +50,6 @@
 - Housekeeping and refactoring the code (Done)
 - Testing the plugin with ChatGPT and Fully functional with added features so far (Done)
 
-## Week 6 (June/12 - June/16)\
+## Week 6 (June/12 - June/16)
 
 - studying python Complex data structures: List, Set, Dictionary, Tuple
