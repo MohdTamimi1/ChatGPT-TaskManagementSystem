@@ -58,3 +58,5 @@
 - Details about Prioritization feature:\
   - add priority to tasks\
   - view tasks by priority\
+  - update priority of tasks \
+  - delete priority of tasks \
