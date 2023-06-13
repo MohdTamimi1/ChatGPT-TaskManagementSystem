@@ -28,6 +28,15 @@ async def add_todo(username):
     return quart.Response(response='OK', status=200)
 
 
+@app.put("/todos/<string:username>/<int:todo_idx>")
+async def update_todo(username, todo_idx):
+    request = await quart.request.get_json(force=True)
+    if 0 <= todo_idx < len(_TODOS[username]):
+        _TODOS[username][todo_idx]["priority"] = request.get(
+            "priority", "low")  # Default priority is low
+    return quart.Response(response='OK', status=200)
+
+
 @app.post("/todos/start_timer/<string:username>/<int:todo_idx>")
 async def start_timer(username, todo_idx):
     if 0 <= todo_idx < len(_TODOS[username]):
