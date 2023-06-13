@@ -121,64 +121,62 @@ paths:
       responses:
         "200":
           description: OK
-
 components:
-    schemas:
+  schemas:
     getTodosResponse:
-        type: object
-        properties:
+      type: object
+      properties:
         todos:
-            type: array
-            items:
+          type: array
+          items:
             type: object
             properties:
-                task:
+              task:
                 type: string
                 description: The task description.
-                start_time:
+              start_time:
                 type: number
                 format: double
                 description: The start time of the timer (Unix timestamp).
-                end_time:
+              end_time:
                 type: number
                 format: double
                 description: The end time of the timer (Unix timestamp).
-                time_spent:
+              time_spent:
                 type: number
                 format: double
                 description: The time spent on the task (in seconds).
-            description: The list of todos.
+          description: The list of todos.
     addTodoRequest:
-        type: object
-        required:
+      type: object
+      required:
         - todo
-        properties:
+      properties:
         todo:
-            type: string
-            description: The todo to add to the list.
-            required: true
+          type: string
+          description: The todo to add to the list.
+          required: true
         priority:
-            type: string
-            description: The priority of the task.
-            enum: [low, medium, high]
-            default: low
+          type: string
+          description: The priority of the task.
+          enum: [low, medium, high]
+          default: low
     deleteTodoRequest:
-        type: object
-        required:
+      type: object
+      required:
         - todo_idx
-        properties:
+      properties:
         todo_idx:
-            type: integer
-            description: The index of the todo to delete.
-            required: true
+          type: integer
+          description: The index of the todo to delete.
+          required: true
     updateTodoRequest:
-        type: object
-        required:
-            - priority
-        properties:
-            priority:
-            type: string
-            description: The new priority of the task.
-            enum: [low, medium, high]
-            default: low
-
+      type: object
+      required:
+        - priority
+      properties:
+        priority:
+          type: string
+          description: The new priority of the task.
+          enum: [low, medium, high]
+          default: low
