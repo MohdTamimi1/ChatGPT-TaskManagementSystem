@@ -57,3 +57,4 @@
 - started working on Prioritization feature (in progress)
 - Details about Prioritization feature:\
   - add priority to tasks\
+  - view tasks by priority\
