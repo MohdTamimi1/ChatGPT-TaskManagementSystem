@@ -172,12 +172,13 @@ components:
           description: The index of the todo to delete.
           required: true
     updateTodoRequest:
-    type: object
-    required:
-        - priority
-    properties:
-        priority:
-            type: string
-            description: The new priority of the task.
-            enum: [low, medium, high]
-            default: low
+  type: object
+  required:
+    - priority
+  properties:
+    priority:
+      type: string
+      description: The new priority of the task.
+      enum: [low, medium, high]
+      default: low
+
