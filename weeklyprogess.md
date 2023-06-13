@@ -55,9 +55,10 @@
 - studying python Complex data structures: List, Set, Dictionary, Tuple\
 - workspace folder changed to venv to match the python virtual environment
 - started working on Prioritization feature (in progress)
-- Details about Prioritization feature:\
-  - add priority to tasks\
-  - view tasks by priority\
-  - update priority of tasks \
-  - delete priority of tasks \
+- Details about Prioritization feature:
+  - add priority to tasks
+  - view tasks by priority
+  - update priority of tasks
+  - delete priority of tasks
   - This could be a simple high/medium/low system, or it could be a numerical system where users assign a number to indicate priority.
+  - testing the feature with ChatGPT (in progress)
