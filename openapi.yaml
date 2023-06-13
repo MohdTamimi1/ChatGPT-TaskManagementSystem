@@ -1,126 +1,126 @@
 openapi: 3.0.1
 info:
-    title: TODO Plugin
-    description: A plugin that allows the user to manage tasks using ChatGPT.
-    version: "v1"
-    servers:
-    - url: http://localhost:5003
-    paths:
-    /todos/{username}:
+  title: TODO Plugin
+  description: A plugin that allows the user to manage tasks using ChatGPT.
+  version: "v1"
+servers:
+  - url: http://localhost:5003
+paths:
+  /todos/{username}:
     get:
-        operationId: getTodos
-        summary: Get the list of todos
-        parameters:
+      operationId: getTodos
+      summary: Get the list of todos
+      parameters:
         - in: path
-            name: username
-            schema:
+          name: username
+          schema:
             type: string
-            required: true
-            description: The name of the user.
-        responses:
+          required: true
+          description: The name of the user.
+      responses:
         "200":
-            description: OK
-            content:
+          description: OK
+          content:
             application/json:
-                schema:
+              schema:
                 $ref: "#/components/schemas/getTodosResponse"
     post:
-        operationId: addTodo
-        summary: Add a todo to the list
-        parameters:
+      operationId: addTodo
+      summary: Add a todo to the list
+      parameters:
         - in: path
-            name: username
-            schema:
+          name: username
+          schema:
             type: string
-            required: true
-            description: The name of the user.
-        requestBody:
+          required: true
+          description: The name of the user.
+      requestBody:
         required: true
         content:
-            application/json:
+          application/json:
             schema:
-                $ref: "#/components/schemas/addTodoRequest"
-        responses:
+              $ref: "#/components/schemas/addTodoRequest"
+      responses:
         "200":
-            description: OK
+          description: OK
     delete:
-        operationId: deleteTodo
-        summary: Delete a todo from the list
-        parameters:
+      operationId: deleteTodo
+      summary: Delete a todo from the list
+      parameters:
         - in: path
-            name: username
-            schema:
+          name: username
+          schema:
             type: string
-            required: true
-            description: The name of the user.
-        requestBody:
+          required: true
+          description: The name of the user.
+      requestBody:
         required: true
         content:
-            application/json:
+          application/json:
             schema:
-                $ref: "#/components/schemas/deleteTodoRequest"
-        responses:
+              $ref: "#/components/schemas/deleteTodoRequest"
+      responses:
         "200":
-            description: OK
+          description: OK
     put:
-        operationId: updateTodo
-        summary: Update a todo in the list
-        parameters:
-            - in: path
-            name: username
-            schema:
-                type: string
-            required: true
-            description: The name of the user.
-        requestBody:
-            required: true
-            content:
-            application/json:
-                schema:
-                $ref: "#/components/schemas/addTodoRequest"
-        responses:
-            "200":
-            description: OK
-    /todos/start_timer/{username}/{todo_idx}:
-    post:
-        operationId: startTimer
-        summary: Start the timer for a specific task
-        parameters:
+      operationId: updateTodo
+      summary: Update a todo in the list
+      parameters:
         - in: path
-            name: username
-            schema:
+          name: username
+          schema:
             type: string
-            required: true
-            description: The name of the user.
-        - in: path
-            name: todo_idx
+          required: true
+          description: The name of the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
             schema:
-            type: integer
-            required: true
-            description: The index of the todo for which to start the timer.
-        responses:
+              $ref: "#/components/schemas/updateTodoRequest"
+      responses:
         "200":
-            description: OK
-    /todos/stop_timer/{username}/{todo_idx}:
+          description: OK
+  /todos/start_timer/{username}/{todo_idx}:
     post:
-        operationId: stopTimer
-        summary: Stop the timer for a specific task
-        parameters:
+      operationId: startTimer
+      summary: Start the timer for a specific task
+      parameters:
         - in: path
-            name: username
-            schema:
+          name: username
+          schema:
             type: string
-            required: true
-            description: The name of the user.
+          required: true
+          description: The name of the user.
         - in: path
-            name: todo_idx
-            schema:
+          name: todo_idx
+          schema:
             type: integer
-            required: true
-            description: The index of the todo for which to stop the timer.
-        responses:
+          required: true
+          description: The index of the todo for which to start the timer.
+      responses:
         "200":
-            description: OK
+          description: OK
+  /todos/stop_timer/{username}/{todo_idx}:
+    post:
+      operationId: stopTimer
+      summary: Stop the timer for a specific task
+      parameters:
+        - in: path
+          name: username
+          schema:
+            type: string
+          required: true
+          description: The name of the user.
+        - in: path
+          name: todo_idx
+          schema:
+            type: integer
+          required: true
+          description: The index of the todo for which to stop the timer.
+      responses:
+        "200":
+          description: OK
 
 components:
     schemas:
