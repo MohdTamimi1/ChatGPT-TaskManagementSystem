@@ -62,6 +62,25 @@ paths:
       responses:
         "200":
           description: OK
+    put:
+        operationId: updateTodo
+        summary: Update a todo in the list
+        parameters:
+            - in: path
+            name: username
+            schema:
+                type: string
+            required: true
+            description: The name of the user.
+        requestBody:
+            required: true
+            content:
+            application/json:
+                schema:
+                $ref: "#/components/schemas/addTodoRequest"
+        responses:
+            "200":
+            description: OK
   /todos/start_timer/{username}/{todo_idx}:
     post:
       operationId: startTimer
