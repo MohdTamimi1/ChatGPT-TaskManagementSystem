@@ -60,3 +60,4 @@
   - view tasks by priority\
   - update priority of tasks \
   - delete priority of tasks \
+  - This could be a simple high/medium/low system, or it could be a numerical system where users assign a number to indicate priority.
