@@ -31,9 +31,12 @@ async def add_todo(username):
 @app.put("/todos/<string:username>/<int:todo_idx>")
 async def update_todo(username, todo_idx):
     request = await quart.request.get_json(force=True)
-    if 0 <= todo_idx < len(_TODOS[username]):
-        _TODOS[username][todo_idx]["priority"] = request.get(
-            "priority", "low")  # Default priority is low
+    new_priority = request.get("priority", "low")  # Default priority is low
+    if new_priority not in ["low", "medium", "high"]:
+        return quart.Response(response='Invalid priority value', status=400)
+    if username not in _TODOS or not (0 <= todo_idx < len(_TODOS[username])):
+        return quart.Response(response='Todo not found', status=404)
+    _TODOS[username][todo_idx]["priority"] = new_priority
     return quart.Response(response='OK', status=200)
 
 
