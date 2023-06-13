@@ -55,3 +55,5 @@
 - studying python Complex data structures: List, Set, Dictionary, Tuple\
 - workspace folder changed to venv to match the python virtual environment
 - started working on Prioritization feature (in progress)
+- Details about Prioritization feature:\
+  - add priority to tasks\
