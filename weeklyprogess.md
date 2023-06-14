@@ -62,3 +62,4 @@
   - delete priority of tasks
   - This could be a simple high/medium/low system, or it could be a numerical system where users assign a number to indicate priority.
   - testing the feature with ChatGPT (testing in progress), testing the functionality of deleting priority and updating and setting a default priority for tasks
+  - Priority feature update function is working correctly, and updating task it self requires delete the existing task then update it with the new task.
