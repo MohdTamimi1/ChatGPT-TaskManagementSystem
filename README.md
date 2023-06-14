@@ -12,6 +12,7 @@ The "todo" plugin provides several capabilities to help you manage your tasks. H
 
 Please note that the plugin is still in the development phase and is not yet ready for production use yet. The list below describes the features that are currently available. More features will be added in the future. and testing is still in progress.
 
-- Add user name to have separate tasks for each user
+- Add username to have separate tasks for each user
 - Get Todos: This function allows you to retrieve your list of tasks. You can see all the tasks you've added along with their priorities.
 - Add Todo: This function lets you add a new task to your list. You can specify the task and its priority level (low, medium, or high) the default is low.
+- Delete Todo: This function allows you to remove a task from your list. You need to specify the index of the task you want to delete.
