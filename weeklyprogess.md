@@ -64,3 +64,4 @@
   - testing the feature with ChatGPT (testing in progress), testing the functionality of deleting priority and updating and setting a default priority for tasks
   - Priority feature update function is working correctly, and updating task it self requires delete the existing task then update it with the new task.
   - The default priority is set to low for all tasks (Tested and working correctly)
+  - to-do list sorted by priority from highest to lowest or vice versa (Tested and working correctly)
