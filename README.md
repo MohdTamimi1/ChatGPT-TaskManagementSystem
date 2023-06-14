@@ -14,3 +14,4 @@ Please note that the plugin is still in the development phase and is not yet rea
 
 - Add user name to have separate tasks for each user
 - Get Todos: This function allows you to retrieve your list of tasks. You can see all the tasks you've added along with their priorities.
+- Add Todo: This function lets you add a new task to your list. You can specify the task and its priority level (low, medium, or high) the default is low.
