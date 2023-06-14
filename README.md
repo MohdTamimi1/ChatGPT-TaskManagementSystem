@@ -13,3 +13,4 @@ The "todo" plugin provides several capabilities to help you manage your tasks. H
 Please note that the plugin is still in the development phase and is not yet ready for production use yet. The list below describes the features that are currently available. More features will be added in the future. and testing is still in progress.
 
 - Add user name to have separate tasks for each user
+- Get Todos: This function allows you to retrieve your list of tasks. You can see all the tasks you've added along with their priorities.
