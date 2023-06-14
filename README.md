@@ -17,3 +17,4 @@ Please note that the plugin is still in the development phase and is not yet rea
 - Add Todo: This function lets you add a new task to your list. You can specify the task and its priority level (low, medium, or high) the default is low.
 - Delete Todo: This function allows you to remove a task from your list. You need to specify the index of the task you want to delete.
 - Update Todo: This function lets you change the priority of a task in your list. You can set the new priority level to low, medium, or high. You need to specify the index of the task you want to update and the new priority level.
+- Start Timer: This function allows you to start a timer for a specific task. This can be useful if you want to track how long you spend on a particular task. You need to specify the index of the task for which you want to start the timer.
