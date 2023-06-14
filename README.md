@@ -19,3 +19,5 @@ Please note that the plugin is still in the development phase and is not yet rea
 - Update Todo: This function lets you change the priority of a task in your list. You can set the new priority level to low, medium, or high. You need to specify the index of the task you want to update and the new priority level.
 - Start Timer: This function allows you to start a timer for a specific task. This can be useful if you want to track how long you spend on a particular task. You need to specify the index of the task for which you want to start the timer.
 - Stop Timer: This function lets you stop the timer for a specific task. Like the start timer function, you need to specify the index of the task for which you want to stop the timer.
+
+These capabilities can be very useful for managing and tracking your tasks, and the ability to set and view priorities can help you focus on the most important tasks first.
