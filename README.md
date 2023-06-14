@@ -16,3 +16,4 @@ Please note that the plugin is still in the development phase and is not yet rea
 - Get Todos: This function allows you to retrieve your list of tasks. You can see all the tasks you've added along with their priorities.
 - Add Todo: This function lets you add a new task to your list. You can specify the task and its priority level (low, medium, or high) the default is low.
 - Delete Todo: This function allows you to remove a task from your list. You need to specify the index of the task you want to delete.
+- Update Todo: This function lets you change the priority of a task in your list. You can set the new priority level to low, medium, or high. You need to specify the index of the task you want to update and the new priority level.
