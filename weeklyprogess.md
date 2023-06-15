@@ -60,7 +60,7 @@
   - view tasks by priority
   - update priority of tasks
   - A simple high/medium/low system to indicate priority.
-- Testing the feature with ChatGPT (Done), testing the functionality of deleting priority and updating and setting a default priority for tasks
+- Testing the feature with ChatGPT, testing the functionality of deleting priority and updating and setting a default priority for tasks (Done)
 - Priority feature update function is working correctly, and updating task it self requires deleting the existing task then update it with the new task.
 - The default priority is set to low for all tasks (Tested and working correctly)
 - to-do list sorted by priority from highest to lowest or vice versa (Tested and working correctly)
