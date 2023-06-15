@@ -67,4 +67,4 @@
 - priority feature and timer feature are working correctly together (Tested and working correctly)
 - Housekeeping and refactoring the code (Done)
 - Update the openapi.yaml file to match the new changes (Done)
-- Today and Tomorrow will testing will help me to decide on the update feature to be only for priority or for the whole task in case the user wants to update the task itself will have to create a new function to update the task without deleting it and creating a new one.
+- Today and Tomorrow testing, will help me to decide on the update feature to be only for priority or for the whole task in case the user wants to update the task itself will have to create a new function to update the task without deleting it and creating a new one.(Till now the update feature is only for priority). (End of the week)
