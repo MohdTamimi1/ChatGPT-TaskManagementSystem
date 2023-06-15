@@ -66,3 +66,4 @@
 - The default priority is set to low for all tasks (Tested and working correctly)
 - to-do list sorted by priority from highest to lowest or vice versa (Tested and working correctly)
 - priority feature and timer feature are working correctly together (Tested and working correctly)
+- Housekeeping and refactoring the code (Done)
