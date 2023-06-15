@@ -67,3 +67,4 @@
 - to-do list sorted by priority from highest to lowest or vice versa (Tested and working correctly)
 - priority feature and timer feature are working correctly together (Tested and working correctly)
 - Housekeeping and refactoring the code (Done)
+- update the openapi.yaml file to match the new changes (Done)
