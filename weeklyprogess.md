@@ -53,8 +53,8 @@
 ## Week 6 (June/12 - June/16)
 
 - Studying python Complex data structures: List, Set, Dictionary, Tuple (In progress)
-- workspace folder changed to venv to match the python virtual environment
-- started working on Prioritization feature (in progress)
+- Workspace folder changed to venv to match the python virtual environment
+- started working on Prioritization feature (Done)
 - Details about Prioritization feature:
   - add priority to tasks
   - view tasks by priority
