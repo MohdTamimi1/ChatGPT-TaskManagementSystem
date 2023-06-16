@@ -11,6 +11,8 @@ app = quart_cors.cors(quart.Quart(__name__),
 # To Keep track of todo's.
 _TODOS = {}
 
+# Add Todo
+
 
 @app.post("/todos/<string:username>")
 async def add_todo(username):
@@ -27,6 +29,8 @@ async def add_todo(username):
     _TODOS[username].append(todo_item)
     return quart.Response(response='OK', status=200)
 
+# Update Todo
+
 
 @app.put("/todos/<string:username>/<int:todo_idx>")
 async def update_todo(username, todo_idx):
@@ -39,12 +43,16 @@ async def update_todo(username, todo_idx):
     _TODOS[username][todo_idx]["priority"] = new_priority
     return quart.Response(response='OK', status=200)
 
+# Start Timer
+
 
 @app.post("/todos/start_timer/<string:username>/<int:todo_idx>")
 async def start_timer(username, todo_idx):
     if 0 <= todo_idx < len(_TODOS[username]):
         _TODOS[username][todo_idx]["start_time"] = time.time()
     return quart.Response(response='OK', status=200)
+
+# Stop Timer
 
 
 @app.post("/todos/stop_timer/<string:username>/<int:todo_idx>")
@@ -58,10 +66,14 @@ async def stop_timer(username, todo_idx):
             _TODOS[username][todo_idx]["start_time"] = None
     return quart.Response(response='OK', status=200)
 
+# Get Todos
+
 
 @app.get("/todos/<string:username>")
 async def get_todos(username):
     return quart.Response(response=json.dumps(_TODOS.get(username, [])), status=200)
+
+# Delete Todo
 
 
 @app.delete("/todos/<string:username>")
@@ -72,11 +84,15 @@ async def delete_todo(username):
         _TODOS[username].pop(todo_idx)
     return quart.Response(response='OK', status=200)
 
+# Logo
+
 
 @app.get("/logo.png")
 async def plugin_logo():
     filename = 'logo.png'
     return await quart.send_file(filename, mimetype='image/png')
+
+# Plugin Manifest
 
 
 @app.get("/.well-known/ai-plugin.json")
@@ -85,6 +101,8 @@ async def plugin_manifest():
     with open("./.well-known/ai-plugin.json") as f:
         text = f.read()
         return quart.Response(text, mimetype="text/json")
+
+# OpenAPI Spec
 
 
 @app.get("/openapi.yaml")
