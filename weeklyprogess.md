@@ -56,10 +56,10 @@
 - Workspace folder changed to venv to match the python virtual environment
 - started working on Prioritization feature (Done)
 - Details about Prioritization feature:
-  - add priority to tasks
-  - view tasks by priority
-  - update priority of tasks
-  - A simple high/medium/low system to indicate priority.
+  - Add priority to tasks (Done)
+  - View tasks by priority (Done)
+  - Update priority of tasks (Done)
+  - A simple high/medium/low system to indicate priority. (Done)
 - Testing the feature with ChatGPT, testing the functionality of deleting priority and updating and setting a default priority for tasks (Done)
 - Priority feature update function is working correctly, and updating task it self requires deleting the existing task then update it with the new task.
 - The default priority is set to low for all tasks (Tested and working correctly)
