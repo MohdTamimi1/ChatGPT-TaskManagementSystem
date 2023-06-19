@@ -68,3 +68,5 @@
 - Housekeeping and refactoring the code (Done)
 - Update the openapi.yaml file to match the new changes (Done)
 - Decided to keep update function to be for priority and any update to the task it self will require deleting the existing task then update it with the new task. (ChatGPT will handle the prompt for the user about deleting and updating the task with new update one).
+
+## Week 7 (June/19 - June/23)
