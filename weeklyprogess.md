@@ -72,3 +72,4 @@
 ## Week 7 (June/19 - June/23)
 
 - Studying python APIs and how to use them
+- Testing and working on what next feature to add to the plugin
