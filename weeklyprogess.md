@@ -74,3 +74,4 @@
 - Studying python APIs and how to use them (In progress)
 - Testing and working on what next feature to add to the plugin
 - Studying the basics of Database and how to use it with python (In progress)
+- Working on the logo design for the plugin (in progress)
