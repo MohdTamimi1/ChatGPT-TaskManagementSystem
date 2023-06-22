@@ -76,3 +76,4 @@
 - Studying the basics of Database and how to use it with python (In progress)
 - Working on the logo design for the plugin (in progress)
 - Users can benefit of the existing plugins in chatGPT and use them side by side with our plugin to have the best way in managing their tasks and time (Example using Wolfram to convert time elapsed from seconds to minutes and change the format of showing the time) tested and working correctly.
+- This week work is focused on the database and how to use it with python and how to integrate it with the plugin to store the tasks and retrieve them when needed. (In progress still not sure about connecting the plugin with database or not)
