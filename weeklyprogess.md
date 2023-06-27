@@ -81,3 +81,4 @@
 ## Week 8 (June/26 - June/30)
 
 - Studying various topics in python
+- As a result of the previous week, and the state of how this project is a show case for the plugin and how it can be integrated with ChatGPT, I decided to not use database and keep the plugin as it is. And the plugin is open to any updates in the future to add more features and to be connected with database.
