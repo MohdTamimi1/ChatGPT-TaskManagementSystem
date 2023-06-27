@@ -79,3 +79,5 @@
 - This week work is focused on the database and how to use it with python and how to integrate it with the plugin to store the tasks and retrieve them when needed. (In progress still not sure about connecting the plugin with database or not)
 
 ## Week 8 (June/26 - June/30)
+
+- Studying various topics in python
