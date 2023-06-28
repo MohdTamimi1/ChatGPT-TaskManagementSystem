@@ -86,3 +86,4 @@
 - Thinking of what next feature to add to the plugin. this depends on the feature to be implemented before the deadline of the project.
 - The main reason for this project was to test the plugin and how it can be integrated with chatGPT and testing the successful integration of the plugin with chatGPT and how it can be used side by side with other plugins in chatGPT. The plugin did all the expected functionality and it is working correctly and it is ready to be used by the users.
 - The added functionality to the plugin is setting up users to have separate tasks for each user. (not mentioned in the proposal)
+- looking for more features to add to the plugin to be implemented before the deadline of the project.
