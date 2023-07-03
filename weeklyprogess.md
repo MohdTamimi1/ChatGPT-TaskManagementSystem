@@ -88,3 +88,5 @@
 - The added functionality to the plugin is setting up users to have separate tasks for each user. (not mentioned in the proposal)
 - looking for more features to add to the plugin to be implemented before the deadline of the project.
 - The new feature to be added to the plugin is the ability to add subtasks to the main task. (not mentioned in the proposal) (in progress)
+
+## Week 9 (July/3 - July/7)
