@@ -90,3 +90,5 @@
 - The new feature to be added to the plugin is the ability to add subtasks to the main task. (not mentioned in the proposal) (in progress)
 
 ## Week 9 (July/3 - July/7)
+
+- still working on adding a subtask to the main task
