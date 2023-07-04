@@ -34,7 +34,7 @@ async def add_todo(username):
 # Update Todo
 
 
-@app.post("/todos/<string:username>/<int:todo_idx>")
+@app.put("/todos/<string:username>/<int:todo_idx>")
 async def update_todo(username, todo_idx):
     request = await quart.request.get_json(force=True)
     new_priority = request.get("priority", "low")
