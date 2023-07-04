@@ -91,6 +91,6 @@
 
 ## Week 9 (July/3 - July/7)
 
-- working on adding a subtask to the main task (in progress)
+- Working on adding a subtask to the main task (Done)
 - openapi.yaml file updated to match the new changes for subtasks (Done)
 - main.py file updated to match the new changes for subtasks (Done)
