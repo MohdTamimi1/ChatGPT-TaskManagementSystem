@@ -161,6 +161,11 @@ components:
           description: The priority of the task.
           enum: [low, medium, high]
           default: low
+        subtasks:
+          type: array
+          items:
+            type: string
+          description: The subtasks of the task.
     deleteTodoRequest:
       type: object
       required:
