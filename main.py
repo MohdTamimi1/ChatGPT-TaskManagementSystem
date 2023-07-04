@@ -89,7 +89,7 @@ async def delete_todo(username):
 # Logo
 
 
-@app.get("/logo.png")
+@app.get("/Logo.png")
 async def plugin_logo():
     filename = 'Logo.png'
     return await quart.send_file(filename, mimetype='image/png')
