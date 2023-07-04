@@ -1,18 +1,18 @@
 {
-    "schema_version": "v1",
-    "name_for_human": "TODO Plugin",
-    "name_for_model": "todo",
-    "description_for_human": "A plugin that allows the user to manage tasks using ChatGPT.",
-    "description_for_model": "A plugin that allows the user to manage tasks using ChatGPT.",
-    "auth": {
-        "type": "none"
-    },
-    "api": {
-        "type": "openapi",
-        "url": "http://localhost:5003/openapi.yaml",
-        "is_user_authenticated": false
-    },
-    "logo_url": "http://localhost:5003/logo.png",
-    "contact_email": "legal@example.com",
-    "legal_info_url": "http://example.com/legal"
+  "schema_version": "v1",
+  "name_for_human": "TODO Plugin",
+  "name_for_model": "todo",
+  "description_for_human": "A plugin that allows the user to manage tasks using ChatGPT.",
+  "description_for_model": "A plugin that allows the user to manage tasks using ChatGPT.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:5003/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:5003/Logo.png",
+  "contact_email": "legal@example.com",
+  "legal_info_url": "http://example.com/legal"
 }
