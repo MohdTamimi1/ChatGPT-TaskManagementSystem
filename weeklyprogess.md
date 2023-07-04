@@ -94,5 +94,5 @@
 - Working on adding a subtask to the main task (Done)
 - openapi.yaml file updated to match the new changes for subtasks (Done)
 - main.py file updated to match the new changes for subtasks (Done)
-- Test the new feature (Subtasks) and to make sure that it is working correctly, could take more time to make sure all other features are working correctly with the new feature. (Done)
--
+- Testing the new feature (Subtasks) and to make sure that it is working correctly, could take more time to make sure all other features are working correctly with the new feature. (Done)
+- The testing for the new feature (Subtasks) is done and it is working correctly with all other features. (Done)
