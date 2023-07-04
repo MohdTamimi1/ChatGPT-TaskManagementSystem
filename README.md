@@ -14,6 +14,10 @@ The Task Management plugin provides several capabilities to help you manage your
 
 Please note that the plugin is still in the development phase and is not yet ready for production use yet. The list below describes the features that are currently available. More features will be added in the future. and testing is still in progress.
 
+The state of the plugin has all the basic functionality to be used by users and can be easily updated in future updates to add more features.
+
+## How to use the plugin
+
 - Add username to have separate tasks for each user
 - Get Todos: This function allows you to retrieve your list of tasks. You can see all the tasks you've added along with their priorities.
 - Add Todo: This function lets you add a new task to your list. You can specify the task and its priority level (low, medium, or high) the default is low, and any subtasks associated with it.
