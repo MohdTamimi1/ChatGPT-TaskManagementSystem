@@ -187,5 +187,5 @@ components:
           default: low
       todo_idx:
         type: integer
-        description: The index of the todo to delete.
+        description: The index of the todo to update.
         required: true
