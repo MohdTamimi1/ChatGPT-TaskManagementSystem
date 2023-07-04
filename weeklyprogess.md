@@ -96,3 +96,4 @@
 - main.py file updated to match the new changes for subtasks (Done)
 - Testing the new feature (Subtasks) and to make sure that it is working correctly, could take more time to make sure all other features are working correctly with the new feature. (Done)
 - The testing for the new feature (Subtasks) is done and it is working correctly with all other features. (Done)
+- While testing updating the priority of the main task will delete it and add a new one with the new priority but subtasks will not be deleted and will be added to the new task with the new priority.
