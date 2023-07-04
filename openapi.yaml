@@ -185,7 +185,7 @@ components:
           description: The new priority of the task.
           enum: [low, medium, high]
           default: low
-      todo_idx:
-        type: integer
-        description: The index of the todo to update.
-        required: true
+        todo_idx:
+          type: integer
+          description: The index of the todo to update.
+          required: true
