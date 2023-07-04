@@ -91,4 +91,4 @@
 
 ## Week 9 (July/3 - July/7)
 
-- still working on adding a subtask to the main task
+- working on adding a subtask to the main task (in progress)
