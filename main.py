@@ -91,7 +91,7 @@ async def delete_todo(username):
 
 @app.get("/logo.png")
 async def plugin_logo():
-    filename = 'logo.png'
+    filename = 'Logo.png'
     return await quart.send_file(filename, mimetype='image/png')
 
 # Plugin Manifest
