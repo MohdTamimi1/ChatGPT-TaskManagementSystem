@@ -62,7 +62,7 @@ paths:
       responses:
         "200":
           description: OK
-    post:
+    put:
       operationId: updateTodo
       summary: Update a todo in the list
       parameters:
