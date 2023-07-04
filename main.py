@@ -24,7 +24,9 @@ async def add_todo(username):
         "start_time": None,
         "end_time": None,
         "time_spent": None,
-        "priority": request.get("priority", "low")  # Default priority is low
+        "priority": request.get("priority", "low"),  # Default priority is low
+        # Default for subtasks is an empty list
+        "subtasks": request.get("subtasks", [])
     }
     _TODOS[username].append(todo_item)
     return quart.Response(response='OK', status=200)
