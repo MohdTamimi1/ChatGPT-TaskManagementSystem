@@ -98,3 +98,5 @@
 - The testing for the new feature (Subtasks) is done and it is working correctly with all other features. (Done)
 - While testing updating the priority of the main task will delete it and add a new one with the new priority but subtasks will not be deleted and will be added to the new task with the new priority.
 - Logo Finalized and added to the plugin
+- Bug fix for the logo not showing correctly in chatGPT
+- Bug fix for updateToDoRequest not working correctly with update priority by adding the todo_idx in the request in open.yaml file.
