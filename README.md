@@ -10,13 +10,13 @@ The Task Management Plugin is a learning project designed to explore the potenti
 
 Plugin name: Todo plugin
 
-The Task Management plugin provides several capabilities to help you manage your tasks. Here's what you can do with it:
-
 Please note that the plugin is still in the development phase and is not yet ready for production use yet. The list below describes the features that are currently available. More features will be added in the future. and testing is still in progress.
 
-The state of the plugin has all the basic functionality to be used by users and can be easily updated in future updates to add more features.
+The plugin has all the basic functionality to be used by users and can be easily improved in future updates to add more features.
 
 ## How to use the plugin
+
+The plugin provides several capabilities to help you manage your tasks. Here's what you can do with it:
 
 - Add username to have separate tasks for each user
 - Get Todos: This function allows you to retrieve your list of tasks. You can see all the tasks you've added along with their priorities.
