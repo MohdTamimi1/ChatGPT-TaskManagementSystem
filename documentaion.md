@@ -17,7 +17,7 @@ OpenAI plugins connect ChatGPT to third-party applications. These plugins enable
 ## File Structure and Explanation
 
 <details>
-<summary>**Plugin Manifest**</summary>
+<summary>Plugin Manifest</summary>
 
 ### ai-plugin.json
 
