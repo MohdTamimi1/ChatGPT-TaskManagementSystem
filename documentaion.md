@@ -24,3 +24,12 @@ OpenAI plugins connect ChatGPT to third-party applications. These plugins enable
 Every plugin requires a ai-plugin.json file, which needs to be hosted on the API’s domain. For example, a company called example.com would make the plugin JSON file accessible via an https://example.com domain since that is where their API is hosted. When the user installs the plugin via the ChatGPT UI, on the backend ChatGPT looks for a file located at /.well-known/ai-plugin.json. The /.well-known folder is required and must exist on your domain in order for ChatGPT to connect with your plugin. If there is no file found, the plugin cannot be installed. For local development, you can use HTTP but if you are pointing to a remote server, HTTPS is required.
 
 </details>
+
+<details>
+<summary>OpenAPI definition</summary>
+
+### openapi.yaml
+
+This file is used to build the OpenAPI specification to document the API. The model in ChatGPT does not know anything about your API other than what is defined in the OpenAPI specification and manifest file. This means that if you have an extensive API, you need not expose all functionality to the model and can choose specific endpoints. For example, if you have a social media API, you might want to have the model access content from the site through a GET request but prevent the model from being able to comment on users posts in order to reduce the chance of spam. The OpenAPI specification is the wrapper that sits on top of your API.
+
+</details>
