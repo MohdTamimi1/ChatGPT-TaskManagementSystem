@@ -30,6 +30,6 @@ Every plugin requires a ai-plugin.json file, which needs to be hosted on the API
 
 ### openapi.yaml
 
-This file is used to build the OpenAPI specification to document the API. The model in ChatGPT does not know anything about your API other than what is defined in the OpenAPI specification and manifest file. This means that if you have an extensive API, you need not expose all functionality to the model and can choose specific endpoints. For example, if you have a social media API, you might want to have the model access content from the site through a GET request but prevent the model from being able to comment on users posts in order to reduce the chance of spam. The OpenAPI specification is the wrapper that sits on top of your API.
+This file is used to build the OpenAPI specification to document the API. The model in ChatGPT does not know anything about the API other than what is defined in the OpenAPI specification and manifest file. This means that if you have an extensive API, you need not expose all functionality to the model and can choose specific endpoints. For example, if you have a social media API, you might want to have the model access content from the site through a GET request but prevent the model from being able to comment on users posts in order to reduce the chance of spam. The OpenAPI specification is the wrapper that sits on top of the API.
 
 </details>
