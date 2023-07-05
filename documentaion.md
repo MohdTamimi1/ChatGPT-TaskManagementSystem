@@ -24,6 +24,7 @@ OpenAI plugins connect ChatGPT to third-party applications. These plugins enable
 Every plugin requires a ai-plugin.json file, which needs to be hosted on the API’s domain. For example, a company called example.com would make the plugin JSON file accessible via an https://example.com domain since that is where their API is hosted. When the user installs the plugin via the ChatGPT UI, on the backend ChatGPT looks for a file located at /.well-known/ai-plugin.json. The /.well-known folder is required and must exist on your domain in order for ChatGPT to connect with your plugin. If there is no file found, the plugin cannot be installed. For local development, you can use HTTP but if you are pointing to a remote server, HTTPS is required.
 
 </details>
+
 <details>
 <summary>OpenAPI definition</summary>
 
@@ -38,5 +39,25 @@ We start by defining the specification version, the title, description, and vers
   - 200 characters max for each API param description field in API specification
 
 Since we are running our server locally, we want to set the server to point to your localhost URL.
+
+</details>
+
+<details>
+<summary>API</summary>
+
+### main.py
+
+Note: Setting CORS to allow chat.openapi.com is only required when running a localhost plugin
+
+The file is used to define the API endpoints to create, update, delete and fetch todo list items for a specefic user.
+
+the framework used to build the API is quart which is a Fast Python web microframework. Using Quart you can:
+
+- write JSON APIs e.g. a RESTful API.
+- render and serve HTML e.g. a blog.
+- serve WebSockets e.g. a simple chat.
+- stream responses e.g. serve video.
+
+all of the above in a single app, or do pretty much anything over the HTTP or WebSocket protocols.
 
 </details>
