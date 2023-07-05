@@ -13,3 +13,5 @@ OpenAI plugins connect ChatGPT to third-party applications. These plugins enable
 - Users activate the plugin
   - Users must manually activate the plugin in the ChatGPT UI. (ChatGPT will not use the plugin by default.)
   - If OAuth is required, users will be redirected via OAuth to the plugin to sign in.
+
+## File Structure and Explanation
