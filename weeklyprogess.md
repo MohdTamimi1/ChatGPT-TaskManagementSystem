@@ -100,7 +100,7 @@
 - Logo Finalized and added to the plugin
 - Bug fix for the logo not showing correctly in chatGPT
 - Bug fix for updateToDoRequest not working correctly with update priority by adding the todo_idx in the request in open.yaml file.
-- ** Difficulties faced while working on the project: **
+- Difficulties faced while working on the project:
   - The main difficulty was working with Node.Js and how to integrate the plugin with ChatGPT. I faced a lot of problems with Node.Js and I decided to change the project to Python since I am more familiar with it and it will be easier for me to integrate the plugin with ChatGPT.
   - The second difficulty was testing the plugin with ChatGPT was too slow, starting with testing all features each time i wanted to test a new feature to make sure that everything is working correctly and and model was slow in giving answers. The model used was ChatGPT4 and there is a limit of 25 prompts every two hours so I had to wait many times to continue while testing.
   - ChatGPT plugins are still in Beta version and many updates where taking place while working on the project and this was the main reason for waiting on connecting the plugin with a database since it is still too slow to give answers and early to do so.
