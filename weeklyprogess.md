@@ -81,7 +81,7 @@
 ## Week 8 (June/26 - June/30)
 
 - Studying various topics in python
-- As a result of the previous week, and the state of how this project is a show case for the plugin and how it can be integrated with ChatGPT, I decided to not use database and keep the plugin as it is. And the plugin is open to any updates in the future to add more features and to be connected with database.
+- As a result of the previous week, and the state of how this project is a show case for the plugin and how it can be integrated with ChatGPT, I decided to not use database and keep the plugin as it is. And the plugin is open to any updates in the future to add more features and to be connected with database. Chatgpt plugins are still in Beta version and undergoing many updates so it is still early to connect the plugin with database since answers are still slow and it is early for a database to be connected, the project is capable of getting updates in the future like connecting it with database and adding more features.
 - All features shown in the proposal are implemented and working correctly.
 - Thinking of what next feature to add to the plugin. this depends on the feature to be implemented before the deadline of the project.
 - The main reason for this project was to test the plugin and how it can be integrated with chatGPT and testing the successful integration of the plugin with chatGPT and how it can be used side by side with other plugins in chatGPT. The plugin did all the expected functionality and it is working correctly and it is ready to be used by the users.
@@ -100,3 +100,7 @@
 - Logo Finalized and added to the plugin
 - Bug fix for the logo not showing correctly in chatGPT
 - Bug fix for updateToDoRequest not working correctly with update priority by adding the todo_idx in the request in open.yaml file.
+- ** Difficulties faced while working on the project: **
+  - The main difficulty was working with Node.Js and how to integrate the plugin with ChatGPT. I faced a lot of problems with Node.Js and I decided to change the project to Python since I am more familiar with it and it will be easier for me to integrate the plugin with ChatGPT.
+  - The second difficulty was testing the plugin with ChatGPT was too slow, starting with testing all features each time i wanted to test a new feature to make sure that everything is working correctly and and model was slow in giving answers. The model used was ChatGPT4 and there is a limit of 25 prompts every two hours so I had to wait many times to continue while testing.
+  - ChatGPT plugins are still in Beta version and many updates where taking place while working on the project and this was the main reason for waiting on connecting the plugin with a database since it is still too slow to give answers and early to do so.
